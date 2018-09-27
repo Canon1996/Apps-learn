@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SearchMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jEk-lc-cMR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eek-hZ-Vs8">
+                                <rect key="frame" x="162" y="592" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="5I4-JK-zBT"/>
+                                    <constraint firstAttribute="height" constant="50" id="E5g-NA-PCi"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="OUm-UE-F3u"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="r8I-hq-9q1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="s97-0g-l5x"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="svc-5M-JkF"/>
+                                    <constraint firstAttribute="width" constant="50" id="yps-Sw-1oY"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="homeButton"/>
+                                <connections>
+                                    <action selector="btnMenuClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3o-Uf-Ymh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-AO-5ut">
+                                <rect key="frame" x="172" y="542" width="31" height="30"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="酒店">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHotleClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Kt-Kd-JUl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2t0-fG-rND">
+                                <rect key="frame" x="172" y="542" width="31" height="30"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="医院">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHospitalClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKT-Mf-mGZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ss-Zi-w8D">
+                                <rect key="frame" x="172" y="542" width="31" height="30"/>
+                                <color key="backgroundColor" red="0.2088247972" green="0.74855409009999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="超市">
+                                    <color key="titleColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSMClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="giQ-78-2yC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2t0-fG-rND" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="522" id="2jc-AT-Y6M"/>
+                            <constraint firstItem="6ss-Zi-w8D" firstAttribute="leading" secondItem="rxP-AO-5ut" secondAttribute="leading" id="FMl-gS-77W"/>
+                            <constraint firstItem="jEk-lc-cMR" firstAttribute="centerX" secondItem="eek-hZ-Vs8" secondAttribute="centerX" id="G8Y-cK-nDr"/>
+                            <constraint firstItem="jEk-lc-cMR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KIH-AP-GGW"/>
+                            <constraint firstItem="6ss-Zi-w8D" firstAttribute="centerX" secondItem="eek-hZ-Vs8" secondAttribute="centerX" id="Qjn-7d-J15"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rxP-AO-5ut" secondAttribute="trailing" constant="20" symbolic="YES" id="RJk-rc-wZd"/>
+                            <constraint firstItem="eek-hZ-Vs8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Szz-P7-6f5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2t0-fG-rND" secondAttribute="trailing" constant="20" symbolic="YES" id="VSa-od-7MQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eek-hZ-Vs8" secondAttribute="bottom" constant="25" id="WNk-ct-zzh"/>
+                            <constraint firstItem="2t0-fG-rND" firstAttribute="baseline" secondItem="rxP-AO-5ut" secondAttribute="baseline" id="cTW-oa-HiW"/>
+                            <constraint firstItem="eek-hZ-Vs8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fig-VR-Fed"/>
+                            <constraint firstItem="2t0-fG-rND" firstAttribute="leading" secondItem="6ss-Zi-w8D" secondAttribute="leading" id="i4r-6I-cjf"/>
+                            <constraint firstItem="6ss-Zi-w8D" firstAttribute="baseline" secondItem="rxP-AO-5ut" secondAttribute="baseline" id="k5n-Gs-Swd"/>
+                            <constraint firstItem="jEk-lc-cMR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ob8-PC-jaG"/>
+                            <constraint firstItem="jEk-lc-cMR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ve0-H8-PHE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnHosptial" destination="2t0-fG-rND" id="RAc-Nj-pUq"/>
+                        <outlet property="btnHotel" destination="rxP-AO-5ut" id="GDO-tp-rO4"/>
+                        <outlet property="btnMenu" destination="eek-hZ-Vs8" id="sR7-Hl-Kbq"/>
+                        <outlet property="btnSM" destination="6ss-Zi-w8D" id="Szg-1n-RHs"/>
+                        <outlet property="mapView" destination="jEk-lc-cMR" id="zDX-vu-auJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homeButton" width="48" height="48"/>
+    </resources>
+</document>
